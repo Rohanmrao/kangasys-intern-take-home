@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KangaSys Device Monitor</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <header>
+    <div>
+      <h1>KangaSys Device Monitor</h1>
+      <p>Devices, readings and threshold alerts</p>
+    </div>
+    <button id="refreshBtn">Refresh</button>
+  </header>
+
+  <main>
+    <section class="card">
+      <div class="section-heading">
+        <h2>Devices</h2>
+        <span id="deviceCount"></span>
+      </div>
+      <div id="devices" class="device-grid"></div>
+    </section>
+
+    <section class="card">
+      <div class="section-heading">
+        <h2>Recent readings</h2>
+        <select id="deviceSelect"></select>
+      </div>
+      <div id="readings"></div>
+    </section>
+
+    <section class="card">
+      <div class="section-heading">
+        <h2>Active alerts</h2>
+        <span id="alertCount"></span>
+      </div>
+      <div id="alerts"></div>
+    </section>
+
+    <section class="card">
+      <h2>Add a reading</h2>
+      <form id="readingForm">
+        <label>
+          Device
+          <select id="formDevice" required></select>
+        </label>
+        <label>
+          Value
+          <input id="formValue" type="number" step="any" required>
+        </label>
+        <label>
+          Unit
+          <input id="formUnit" required>
+        </label>
+        <label>
+          Timestamp
+          <input id="formTimestamp" type="datetime-local">
+        </label>
+        <button type="submit">Submit reading</button>
+      </form>
+      <p id="formMessage" class="message"></p>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
