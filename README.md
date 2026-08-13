@@ -110,7 +110,7 @@ Windows:
 
 ```bash
 python -m venv .venv
-.venv\Scripts\activate
+.\.venv\Scripts\Activate.ps1
 ```
 
 macOS/Linux:
@@ -156,7 +156,7 @@ The supplied sample contains:
 ## Run tests
 
 ```bash
-pytest -q
+.\.venv\Scripts\python.exe -m pytest -q
 ```
 
 The tests use a separate SQLite database so running the test suite does not alter your local development database.
