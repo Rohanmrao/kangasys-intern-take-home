@@ -1,0 +1,6 @@
+[
+  { "id": "dev-001", "name": "Chiller Room Temp Sensor", "type": "temperature-sensor", "status": "active", "unit": "°C", "normalRange": { "min": 2, "max": 8 } },
+  { "id": "dev-002", "name": "Boiler Pressure Gauge", "type": "pressure-gauge", "status": "active", "unit": "bar", "normalRange": { "min": 1.5, "max": 6 } },
+  { "id": "dev-003", "name": "Server Room Temp Sensor", "type": "temperature-sensor", "status": "active", "unit": "°C", "normalRange": { "min": 18, "max": 27 } },
+  { "id": "dev-004", "name": "Loading Bay Door Sensor", "type": "contact-sensor", "status": "inactive", "unit": "state", "normalRange": null }
+]
